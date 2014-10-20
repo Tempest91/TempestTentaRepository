@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="45ecafd3-da10-4743-9327-506efb7f432d" name="UMLUseCaseDiagram1" linkedPackageId="83985f49-a019-450d-90c5-e5b3bcccfffc" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="fdd5a213-fa16-48e5-9c93-02fcd9e2f6e8">
-      <profileInstance Id="867b6e17-4510-4210-bef7-7e324bf9ec70" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="cf1ab075-2ddf-4f78-8553-b25c9d1bd9d2">
-      <profileInstance Id="4608da57-85f3-469f-b99b-743c426ba83a" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <subsystem Id="dc99f3a3-8c48-4ef1-8389-4df6e25a748e" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -54,5 +40,19 @@
   </packagedElements>
   <package Id="83985f49-a019-450d-90c5-e5b3bcccfffc" name="ModelingProjectTenta">
     <elementDefinition Id="c475f55b-a44d-4a20-8809-eccde482b5ac" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fdd5a213-fa16-48e5-9c93-02fcd9e2f6e8">
+        <profileInstance Id="867b6e17-4510-4210-bef7-7e324bf9ec70" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cf1ab075-2ddf-4f78-8553-b25c9d1bd9d2">
+        <profileInstance Id="4608da57-85f3-469f-b99b-743c426ba83a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

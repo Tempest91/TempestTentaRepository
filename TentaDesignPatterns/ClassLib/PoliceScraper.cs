@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace ClassLib
 {
-    public class PoliceScraper : ScraperSystem
+    public class PoliceScraper : CrimeMediatorSystem
     {
-        public override string URL
+
+        public PoliceScraper(CrimeMediatorSystem mediator)
+        {
+            this.mediator = mediator;
+            this.mediator.RegisterMyScraper(this);
+        }
+        public  string URL
         {
             get { return "http://polisen.se/"; }
         }
@@ -17,9 +23,10 @@ namespace ClassLib
         {
             get { return "//*[@id='newslist-1']/div/ul/li[1]/p[1]/a"; }
         }
-        //public override string NewsName
-        //{
-        //    get { return ""; }
-        //}
+        public override string NewsSiteName
+        {
+            get { return "Polisen.se"; }
+        }
+
     }
 }
