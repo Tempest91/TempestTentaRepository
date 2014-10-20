@@ -21,12 +21,30 @@
       </subsystem>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="0faf61e7-077e-4609-9ef6-382f83ef1fd9" name="Actor1" isAbstract="false" isLeaf="false">
+      <actor Id="0faf61e7-077e-4609-9ef6-382f83ef1fd9" name="Criminal" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0e6ab5a1-9110-4352-8262-ec57d6d3adf4" />
+        <targetEnds>
+          <association Id="3d9eb3d0-2398-41de-8329-d3e5a5919602" isDerived="false" sourceEndRoleName="Criminal" targetEndRoleName="Read top crimes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="84b5da98-2da4-4ec3-a101-88629589521d" LastKnownName="Read top crimes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b1fb742-fc40-40a3-a971-54aa2062ee08" name="Criminal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3f8f582b-bc02-4850-96a2-9d9c2c5abe41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc9fa1ff-ac4c-4a00-a429-e26033e850d7" name="Read top crimes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="140a8136-aa68-44c1-b2c5-ed49b7ffbf66" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="384f2a9d-6e23-48eb-99a1-e22c673d302d" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <packageHasNamedElement>
-      <useCase Id="84b5da98-2da4-4ec3-a101-88629589521d" name="UseCase2" isAbstract="false" isLeaf="false">
+      <useCase Id="84b5da98-2da4-4ec3-a101-88629589521d" name="Read top crimes" isAbstract="false" isLeaf="false">
         <elementDefinition Id="ee6ca744-9c7c-4ad0-b349-7ae9f95beb6c" />
         <subjects>
           <subsystemMoniker Id="dc99f3a3-8c48-4ef1-8389-4df6e25a748e" LastKnownName="Subsystem1" />

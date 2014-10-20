@@ -9,7 +9,8 @@ namespace UnitTesting
         [TestMethod]
         public void TestMethodPolisen()
         {
-            var test = new PoliceScraper();
+            var testSystem = new ScraperSystem();
+            PoliceScraper test = new PoliceScraper(testSystem);
         }
         public void TestMethodUpplysning()
         {

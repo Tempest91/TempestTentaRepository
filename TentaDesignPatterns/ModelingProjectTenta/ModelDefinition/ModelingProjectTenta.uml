@@ -36,14 +36,56 @@
     <packageHasNamedElement>
       <actor
         Id="0e6ab5a1-9110-4352-8262-ec57d6d3adf4"
-        name="Actor1"
+        name="Criminal"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="384f2a9d-6e23-48eb-99a1-e22c673d302d"
+            isDerived="false"
+            sourceEndRoleName="Criminal"
+            targetEndRoleName="Read top crimes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ee6ca744-9c7c-4ad0-b349-7ae9f95beb6c"
+              LastKnownName="Read top crimes"
+              LastKnownLocation="ModelingProjectTenta.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f8f582b-bc02-4850-96a2-9d9c2c5abe41"
+                  name="Criminal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="140a8136-aa68-44c1-b2c5-ed49b7ffbf66"
+                  name="Read top crimes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="ee6ca744-9c7c-4ad0-b349-7ae9f95beb6c"
-        name="UseCase2"
+        name="Read top crimes"
         isAbstract="false"
         isLeaf="false">
         <subjects>
