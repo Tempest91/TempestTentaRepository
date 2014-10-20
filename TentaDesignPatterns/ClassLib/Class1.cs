@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLib
 {
-    public class Class1
+    public interface IScraper
     {
     
     }

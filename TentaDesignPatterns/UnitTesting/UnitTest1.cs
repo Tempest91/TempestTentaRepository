@@ -7,9 +7,13 @@ namespace UnitTesting
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethodPolisen()
         {
-       
+            var test = new PoliceScraper();
+        }
+        public void TestMethodUpplysning()
+        {
+            var test = new UpplysningScraper();
         }
     }
 }
