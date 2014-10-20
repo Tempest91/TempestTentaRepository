@@ -8,6 +8,7 @@ namespace ClassLib
 {
     public interface IScraper
     {
-    
+        string FoundCrime(string Title);
+        //Task<string> FoundCrimeasync(string Title);
     }
 }

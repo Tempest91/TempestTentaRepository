@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ClassLib;
 
 namespace UnitTesting
 {
@@ -9,12 +10,11 @@ namespace UnitTesting
         [TestMethod]
         public void TestMethodPolisen()
         {
-            var testSystem = new ScraperSystem();
-            PoliceScraper test = new PoliceScraper(testSystem);
+          
         }
-        public void TestMethodUpplysning()
+        public void TestMethodUtryckning()
         {
-            var test = new UpplysningScraper();
+            
         }
     }
 }
