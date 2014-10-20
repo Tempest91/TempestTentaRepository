@@ -11,16 +11,16 @@ namespace ClassLib
         public virtual string URL { get; set; }
         public virtual string XPATH { get; set; }
         public virtual string NewsSiteName { get; set; }
-        
-        protected CrimeMediator mediator;
+
+        public CrimeMediator mediator;
         public void ReadTopCrime()
         {
             var getHtmlWeb = new HtmlWeb();
             var document = getHtmlWeb.Load(URL);
             string newsheadline = String.Empty;
-             
+
             var nodes = document.DocumentNode.SelectNodes(XPATH);
-            
+
             foreach (var title in nodes)
             {
                 newsheadline = title.InnerText;
@@ -29,7 +29,7 @@ namespace ClassLib
             this.mediator.FoundCrime(NewsSiteName, newsheadline);
         }
 
-      
+
     }
 
 

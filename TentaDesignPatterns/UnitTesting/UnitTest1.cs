@@ -17,6 +17,7 @@ namespace UnitTesting
             testScraper.ReadTopCrime();
             Assert.IsNotNull(test.newsHeadline);
         }
+         [TestMethod]
         public void TestMethodUtryckningHeadLine()
         {
             CrimeMediator test = new CrimeMediator();
