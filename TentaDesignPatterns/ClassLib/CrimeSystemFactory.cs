@@ -8,16 +8,16 @@ namespace ClassLib
 {
     public class CrimeSystemFactory
     {
-        public static IScraper ScrapeService(string type)
+        public static IScraper ScrapeService(string type, CrimeMediator mediator)
         {
             IScraper service = null;
             switch (type)
             {
                 case "Polisen.se":
-                    service = new PoliceScraper();
+                    service = new PoliceScraper(mediator);
                     break;
                 case "Utryckning.se":
-                    service = new UtryckningScraper();
+                    service = new UtryckningScraper(mediator);
                     break;
                 default:
                     return null;

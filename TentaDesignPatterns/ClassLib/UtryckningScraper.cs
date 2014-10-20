@@ -5,9 +5,9 @@ using System.Text;
 
 namespace ClassLib
 {
-    public class UtryckningScraper : CrimeMediatorSystem
+    public class UtryckningScraper : CrimeScraperSystem
     {
-        public UtryckningScraper (CrimeMediatorSystem mediator)
+        public UtryckningScraper (CrimeMediator mediator)
         {
             this.mediator = mediator;
             this.mediator.RegisterMyScraper(this);

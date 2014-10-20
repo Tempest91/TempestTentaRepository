@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ClassLib
 {
-    public class PoliceScraper : CrimeMediatorSystem
+    public class PoliceScraper : CrimeScraperSystem
     {
 
-        public PoliceScraper(CrimeMediatorSystem mediator)
+        public PoliceScraper(CrimeMediator mediator)
         {
             this.mediator = mediator;
             this.mediator.RegisterMyScraper(this);
         }
-        public  string URL
+        public override string URL
         {
             get { return "http://polisen.se/"; }
         }

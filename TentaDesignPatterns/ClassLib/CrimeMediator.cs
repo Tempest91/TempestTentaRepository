@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace ClassLib
 {
-    public class CrimeMediatorSystem
+    public class CrimeMediator
     {
-        private IScraper _Iscraper;
+        private IScraper Scraper;
         public string newsHeadline { get; set; }
 
-        internal void RegisterMyScraper(IScraper _Iscraper)
+        internal void RegisterMyScraper(IScraper Scraper)
         {
-            this._Iscraper = _Iscraper;
-
+            this.Scraper = Scraper;
         }
 
         public void FoundCrime(string site, string title)
         {
-            newsHeadline = newsHeadline;
+            newsHeadline = title;
             Console.WriteLine("Från" + site + title);
         }
 

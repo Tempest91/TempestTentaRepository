@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CrimeMediatorSystem.cs" />
+    <Compile Include="CrimeMediator.cs" />
     <Compile Include="CrimeSystemFactory.cs" />
     <Compile Include="IScraper.cs" />
     <Compile Include="PoliceScraper.cs" />

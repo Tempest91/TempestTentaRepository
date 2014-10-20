@@ -12,7 +12,7 @@ namespace ClassLib
         public virtual string XPATH { get; set; }
         public virtual string NewsSiteName { get; set; }
         
-        protected CrimeScraperSystem mediator;
+        protected CrimeMediator mediator;
         public void ReadTopCrime()
         {
             var getHtmlWeb = new HtmlWeb();

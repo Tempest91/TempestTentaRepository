@@ -10,15 +10,19 @@ namespace UnitTesting
     {
   
         [TestMethod]
-        public void TestMethodPolisen()
+        public void TestMethodPolisenHeadline()
         {
-            //var testVar = new PoliceScraper();
-            //string testResult = "Från Polisens nyhetsflöde";
-            //Assert.AreEqual(testResult, testVar.ReadTopCrime());
+            CrimeMediator test = new CrimeMediator();
+            IScraper testScraper = CrimeSystemFactory.ScrapeService("Polisen.se", test);
+            testScraper.ReadTopCrime();
+            Assert.IsNotNull(test.newsHeadline);
         }
-        public void TestMethodUtryckning()
+        public void TestMethodUtryckningHeadLine()
         {
-            
+            CrimeMediator test = new CrimeMediator();
+            IScraper testScraper = CrimeSystemFactory.ScrapeService("Utryckning.se", test);
+            testScraper.ReadTopCrime();
+            Assert.IsNotNull(test.newsHeadline);
         }
     }
 }
